@@ -1,9 +1,23 @@
-# About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
 
+# 关于
+
+This is my test site, which is powered by [Astro](https://astro.build/) & [Fuwari](https://github.com/saicaca/fuwari). **Still under constructing!** (～o￣3￣)～
 ::github{repo="saicaca/fuwari"}
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+> ### 在本网站中使用的图片的来源
+>
+> - Avatar: [宇沢 レイサ](https://schale.gg/?chara=Reisa) from [Blue Archive](https://bluearchive.nexon.com/)
+> - Banner: [粉色的和蓝色的抽象绘画照片](https://www.pexels.com/zh-cn/photo/1546251/) by [Luis Quintero](https://www.pexels.com/zh-cn/@jibarofoto/)
+> - Icons of social platform: [Icônes](https://icones.js.org/)
+
+---
+
+> ### 网站链接
+>
+> - **链接站**：<https://mediatefrystal.github.io/>  
+
+---
+
+一个小小的计数器：（Powered by [Moe Counter](https://github.com/journey-ad/Moe-Counter)）
+
+![Count!](https://count.getloli.com/get/@mediatefrystal-webpage?theme=rule34)

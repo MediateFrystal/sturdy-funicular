@@ -6,7 +6,10 @@ import { url } from '../utils/url-utils'
 
 <div class="card-base max-w-[var(--page-width)] min-h-[4.5rem] rounded-b-none mx-auto flex items-center px-6">
     <div class="transition text-50 text-sm">
-        © 2024 {profileConfig.name}. All Rights Reserved. /
+        <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可">
+            <img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris">
+        </a>
+        © 2021 - 2024 {profileConfig.name}. All Rights Reserved. /
         <a class="link text-[var(--primary)] font-medium" target="_blank" href={url('rss.xml')}>RSS</a> /
         <a class="link text-[var(--primary)] font-medium" target="_blank" href={url('sitemap-index.xml')}>Sitemap</a>
         <br>
