@@ -21,7 +21,7 @@ export const siteConfig: SiteConfig = {
     credit: {
       enable: true,         // Display the credit text of the banner image
       text: '图片来源',              // Credit text to be displayed
-      url: 'https://www.pexels.com/zh-cn/photo/1546251/'                // (Optional) URL link to the original artwork or artist's page
+      url: 'https://www.pexels.com/zh-cn/photo/2471235/'                // (Optional) URL link to the original artwork or artist's page
     }
   },
   favicon: [    // Leave this array empty to use the default favicon

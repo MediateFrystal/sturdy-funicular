@@ -29,11 +29,10 @@ draft: false
 
 3. 保存工作区。
 
-4. 安装Fuwari
+4. 安装Fuwari，注意不需要pnpm add sharp，详见下文！
 
    ```bash
    pnpm install
-   ~~pnpm add sharp~~
    ```
 
    ![网络问题](<./2024-08-11 122445.png>)
@@ -78,7 +77,10 @@ draft: false
 11. 在VS Code里面提交更改，坐和放宽，完成！\^o^/
    ![提交](<./2024-08-11 150018.png>)
 
+---
+
 ### 小问题
+
 刚才添加部署那一步发现cloudflare pages又可以自动部署了？？
 ![成功](<./2024-08-11 134239.png>)
 
