@@ -1,7 +1,7 @@
 ---
 title: 从Hexo转到Astro
 published: 2024-07-19
-description: '前几天不是说最近不打算转到Astro吗？真香了。既然Fancybox用不了那我就不用了！看不清楚就自己想办法吧！ ※ 之后有人创建了issue并且官方已经搞好了，所以看这个并没有什么用'
+description: '前几天不是说最近不打算转到Astro吗？真香了。既然Fancybox用不了那我就不用了！看不清楚就自己想办法吧！ ※ 之后有人创建了issue并且官方已经搞好了，所以看这个并没有什么用。'
 image: ''
 tags: [
     Tech,

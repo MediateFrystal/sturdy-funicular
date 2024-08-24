@@ -18,6 +18,6 @@ This is my test site, which is powered by [Astro](https://astro.build/) & [Fuwar
 
 ---
 
-一个小小的计数器：（Powered by [Moe Counter](https://github.com/journey-ad/Moe-Counter)）
+一个计数器：（Powered by [Moe Counter](https://github.com/journey-ad/Moe-Counter)，应该是需要特殊网络才能显示）
 
 ![Count!](https://count.getloli.com/get/@mediatefrystal-webpage?theme=rule34)

@@ -1,7 +1,7 @@
 ---
 title: 安卓应用程序简单汉化（1）
 published: 2024-08-17
-description: '干一下老本行：汉化软件。'
+description: ''
 image: ''
 tags: [
     Tutorial,

@@ -1,10 +1,11 @@
 ---
-title: R3300L刷机和安装Cloudreve
+title: R3300-L刷安卓和安装Cloudreve
 published: 2024-07-23
-description: '两个月前，我朋友给了我一个电视盒子 R3300L，我觉得可以折腾一下。这个盒子闲鱼上面还挺多，而且价格十分便宜。'
+description: ''
 image: './IMG_6563.jpg'
 tags: [
-    Tech
+    Tech,
+    R3300-L
 ]
 category: 'Tech'
 draft: false 
@@ -15,24 +16,22 @@ draft: false
 >
 > * [参数](#简单的参数)
 >
-> [刷机](#刷机)
+> [刷机](#刷机)  
+> [安卓体验](#安卓体验)  
+> [Cloudreve（通过Linux Deploy）](#cloudreve通过linux-deploy)
 >
-> [安卓体验](#安卓体验)
->
-> [Cloudreve](#cloudreve)
->
-> * [开机自启动](#开机自启动)
-> * [挂载](#挂载)
-> * [修改Linux img大小](#修改linux-img大小)
-> * [如何关机](#如何关机)
-> * [Tailscale](#tailscale)
+> * [开机自启动](#开机自启动)  
+> * [挂载](#挂载)  
+> * [修改Linux img大小](#修改linux-img大小)  
+> * [如何关机](#如何关机)  
+> * [Tailscale](#tailscale)  
 > * [一些想法](#一些想法)
 
 ---
 
 ## 开端
 
-两个月前，我朋友给了我一个电视盒子 R3300L，我觉得可以折腾一下。这个盒子闲鱼上面还挺多，而且价格十分便宜。\^o^/
+两个月前，我朋友给了我一个电视盒子 R3300-L，我觉得可以折腾一下。这个盒子闲鱼上面还挺多，而且价格十分便宜。\^o^/
 ![I/O](<./IMG_6565.jpg>)
 
 ### 简单的参数
@@ -108,7 +107,7 @@ Kodi挺好用的，不过那个拖动进度条做的非常拉跨。然后听说K
 
 ---
 
-## Cloudreve
+## Cloudreve（通过Linux Deploy）
 
 电视盒子，应该比较适合长时间运行，功耗性能都比较低，适合拿来干什么呢？（其实我看见有人在这上面跑openwrt，不过我觉得那个对我来说没什么用）
 
@@ -119,12 +118,11 @@ Kodi挺好用的，不过那个拖动进度条做的非常拉跨。然后听说K
 
 这次是看见了有一个人的个人网盘 <https://blog.yuchu.me/posts/30e5/> 。
 
-![网盘](<./2024-07-17 155522.png>)
-
 感觉还挺不错的界面，于是翻了一下他的博客，看看有没有相关信息。看见了他的 [用docker搭建cloudreve个人网盘系统](https://blog.yuchu.me/posts/cf51/)
-于是上网找了一篇教程跟着操作： [Android搭建Cloudreve私人云盘](https://cloud.tencent.com/developer/article/2046860)
 
-> 概括一下，就是在安卓里面安装linux deploy，然后运行debian，用debian启动cloudreve。
+于是**上网找了一篇教程跟着操作： [Android搭建Cloudreve私人云盘](https://cloud.tencent.com/developer/article/2046860)**
+
+> 概括一下，就是**在安卓里面安装Linux Deploy，然后运行Debian，用Debian启动Cloudreve**。
 
 :::warning
 本人之前在虚拟机里面体验过一会ubuntu，但是没有深入了解linux，没有linux开发经历，甚至指令都没有了解几个，所以接下来有出错的地方可以指正。
