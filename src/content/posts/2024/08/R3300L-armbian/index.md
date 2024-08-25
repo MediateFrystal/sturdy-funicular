@@ -24,6 +24,7 @@ draft: false
 >
 > * [录播姬进程守护](#录播姬进程守护)  
 > * [录播姬录播画质问题](#录播姬录播画质问题)
+> * [外网访问 添加环境变量](#外网访问-添加环境变量)
 >
 > [安装 Tailscale](#安装-tailscale)  
 > [总结](#总结)
@@ -327,6 +328,39 @@ bili_ticket "XXXXXXXXX"
 
 问题是可能过几天cookie就过期了，要手动更新。如果cookie过期了我就会在这里追加的！
 
+### 外网访问 添加环境变量
+
+※*8/25追加，因为离开家才发现打不开*
+
+这属于可选操作。因为我接下来安装了Tailscale，在远程访问时被拦下来了。
+
+![Access Denied](<./2024-08-25 091102.png>)
+
+因为只有打开Tailscale才可以访问到该设备，所以应该是较为安全的。我这边选择禁用这个警告。
+
+> 参考：<https://www.freecodecamp.org/chinese/news/how-to-set-an-environment-variable-in-linux/>
+
+编辑`/etc/profile`，最末尾添加`export BREC_HTTP_OPEN_ACCESS=1`  
+编辑`/etc/environment`，添加`BREC_HTTP_OPEN_ACCESS=1`  
+
+然后用`source /etc/environment`命令刷新，最后用`printenv`命令查看是否添加。
+
+```bash
+root@aml:~# printenv BREC_HTTP_OPEN_ACCESS
+1
+```
+
+但是这时候还是无法访问，重启等等方法也无效。此时，我翻看了Github releases，发现2.11.1版本写着 `修复了 --http-open-access 参数无效的问题`。
+于是我想到在启动时加上`--http-open-access`。  
+使用`brec run --http-open-access --bind "http://*:2356" "/storage/brec/"`启动，此时就可以正常访问了。
+
+然后我们只需要去修改`/etc/systemd/system/brec.service`中启动那一行就可以了。修改完后输入：
+
+```bash
+root@aml:~# systemctl daemon-reload
+root@aml:~# systemctl start brec
+```
+
 ---
 
 ## 安装 Tailscale
@@ -335,7 +369,7 @@ bili_ticket "XXXXXXXXX"
 
 ![连接设备](<./2024-08-24 211451.png>)
 
-刚刚发现在Tailscale控制台里面可以关闭Key expiry，之后应该就不用重新验证了。
+刚刚还发现在Tailscale控制台里面可以关闭Key expiry，之后应该就不用重新验证了。
 
 ![Key expiry](<./2024-08-24 211624.png>)
 
@@ -382,13 +416,20 @@ bili_ticket "XXXXXXXXX"
 ### 结果展示
 
 ![录播姬](<./2024-08-24 232510.png>)
+录播姬UI
 
 ![直接播放视频](<./Screenshot_20240824_061102_Samsung Internet.jpg>)
 在录播姬的文件管理器里点击flv文件，有时可以直接打开播放器。但是点击经常是直接下载了，不知道怎么回事。还是浏览器直接预览会方便一点。
 
 ![Cloudreve播放视频](<./2024-08-24 233218.png>)
+轻松播放Bad Apple
 
 ![外观](<./IMG_7209.jpg>)
+外观
+
+![正常录制的日志](<./2024-08-25 084535.png>)
+一次正常录制的日志大概是长这样的吧。
 
 ---
-v1：2024-08-24T15:37:33.859Z
+v1：2024-08-24T15:37:33.859Z  
+v2：2024-08-25T02:31:34.086Z
