@@ -1,5 +1,5 @@
 ---
-title: 安卓应用程序简单汉化（1）
+title: 安卓应用程序简单汉化
 published: 2024-08-17
 description: ''
 image: ''
@@ -106,14 +106,13 @@ MT管理器；翻译器；要汉化的软件。
 ![11](<./Screenshot_20240814-203431.png>)
 ![12](<./Screenshot_20240814-203508.png>)
 
-phiola 2.2-rc4 中文字典下载：  
-[蓝奏云](<https://www.lanzout.com/b0hc8qe0d>)  
-[123](<https://www.123pan.com/s/3ZlATd-R5URd>)
-
 全部字典：  
-[蓝奏云 密码：1234](<https://www.lanzout.com/b0hc8qe0d>)  
 [123](<https://www.123pan.com/s/3ZlATd-D5URd>)
 
-如果出下篇文章，我就讲一下汉化dex还有其他部分汉化，还有发布一下那个Chip Defense的汉化字典。
+~~如果出下篇文章，我就讲一下汉化dex还有其他部分汉化，还有发布一下那个Chip Defense的汉化字典。~~
+
+9/1追加：
+最近实在是没时间更新了。那个ChipDefense 1.38的机翻版字典已经上传了。本来还想修改好再发布的。
 
 v1：2024-08-17T14:27:43.150Z
+v2：2024-09-01T03:38:20.537Z

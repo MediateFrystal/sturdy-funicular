@@ -53,27 +53,18 @@ export const profileConfig: ProfileConfig = {
   name: 'MediateFrystal',
   bio: '介导鱼苗',
   links: [
-    {
-      name: 'X',
-      icon: 'fa6-brands:x-twitter', // Visit https://icones.js.org/ for icon codes
+      // Visit https://icones.js.org/ for icon codes
       // You will need to install the corresponding icon set if it's not already included
       // `pnpm add @iconify-json/<icon-set-name>`
-      url: 'https://x.com/MediateFrystal/',
-    },
     {
       name: 'GitHub',
       icon: 'fa6-brands:github',
       url: 'https://github.com/MediateFrystal/',
     },
     {
-      name: 'Discord',
-      icon: 'fa6-brands:discord',
-      url: 'https://discordapp.com/users/809782264312758284',
-    },
-    {
       name: 'QQ',
       icon: 'fa6-brands:qq',
-      url: 'http://wpa.qq.com/msgrd?v=3&uin=3089574798&site=qq&menu=yes',
+      url: 'tencent://message/?uin=2426439395&Site=&Menu=yes',
     },
     {
       name: '哔哩哔哩',
