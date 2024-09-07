@@ -3,6 +3,13 @@
 
 ---
 
+### 2024-9-7 Quick Fix
+
+1. Some small improvements
+2. 更新了个人简介。
+
+最近更加没时间更新了，因为也是正式开学了所以课表安排的还是挺满的。
+
 ### 2024-9-1 Quick Fix
 
 1. Some small improvements
