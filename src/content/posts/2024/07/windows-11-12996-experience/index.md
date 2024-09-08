@@ -4,7 +4,8 @@ published: 2024-07-15
 description: 'Windows 11 21996还算可以拿来日常使用，前提是你可以接受前面的8个bug，（我之后还是因为有点受不了这些bug所以升级了。╮(╯-╰)╭'
 image: './2024-07-15 213024.png'
 tags: [
-    Tech
+    Tech,
+    Windows
 ]
 category: 'Tech'
 draft: false 
